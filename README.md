@@ -156,7 +156,7 @@ Note that DynamicTreeAdapter takes the **UniquKey type** as generic.
     }
 ```
 
-**You can clone this project and run the demo immediately.**
+**You can clone this project and run the demo with sample data immediately.**
 
 ## License
 
