@@ -98,7 +98,7 @@ data class Person(
 Finally, DynamicTree uses the node list.
 
 ```kotlin
- org_view.treeData = listOf<Node>(...)
+ dt_view.treeData = listOf<Node>(...)
 ```
 
 ### 3. Make OrgGroupAdapter
@@ -133,6 +133,8 @@ class TestAdapter: DynamicTreeAdapter<Node>(
     }
 }
 ```
+
+Note that DynamicTreeAdapter takes the **UniquKey type** as generic.
 
 ### 4. In your Activity or Fragment
 
