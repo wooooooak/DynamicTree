@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="orgWhite">#ffffff</color>
+    <color name="orgGray5">#adb5bd</color>
+    <color name="orgBlue2">#a5d8ff</color>
+    <color name="orgCyan1">#f6e58d</color>
+    <color name="orgBlack">#000000</color>
+    <array name="dtColorArray">
+        <!--        <item>#4dabf7</item>-->
+        <item>#74c0fc</item>
+        <item>#a5d8ff</item>
+        <item>#d0ebff</item>
+        <item>#e7f5ff</item>
+    </array>
+</resources>

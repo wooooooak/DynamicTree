@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="DynamicTreeView">
+        <attr name="dt_list_page_margin" format="dimension|reference" />
+        <attr name="dt_selected_item_color" format="color|reference" />
+        <attr name="dt_depth_limit" format="integer" />
+        <attr name="dt_stack_view_color_array" format="reference" />
+        <attr name="dt_animation_duration" format="integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DemoActivity">
+
+    <wooooooak.com.library.view.DynamicTreeView
+        android:id="@+id/org_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/orgGray5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:dt_animation_duration="250"
+        app:dt_depth_limit="3"
+        app:dt_list_page_margin="8dp"
+        app:dt_stack_view_color_array="@array/dtColorArray" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

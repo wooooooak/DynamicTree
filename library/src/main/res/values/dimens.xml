@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="org_default_page_marge">10dp</dimen>
+</resources>
