@@ -23,12 +23,12 @@ allprojects {
 
 ```
 dependencies {
-    implementation "com.github.$version"
+    implementation "com.github.wooooooak.DynamicTree:$version"
     implementation "androidx.recyclerview:recyclerview:$recyclerViewVersion"
 }
 ```
 
-The latest version is 1.0.0. Checkout [here]()
+The latest version is 1.0.0. Checkout [here](https://github.com/wooooooak/DynamicTree/releases)
 
 ## Usage
 
@@ -41,23 +41,23 @@ The latest version is 1.0.0. Checkout [here]()
     ...
     >
     <wooooooak.com.library.view.DynamicTreeView
-        android:id="@+id/org_view"
+        android:id="@+id/dt_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:org_animation_duration="250"
-        app:org_depth_limit="3"
-        app:org_list_page_margin="8dp"
-        app:org_stack_view_color_array="@array/dtColorArray" />
+        app:dt_animation_duration="250"
+        app:dt_depth_limit="3"
+        app:dt_list_page_margin="8dp"
+        app:dt_stack_view_color_array="@array/dtColorArray" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-- **org_list_page_margin** : determines how overlapping the view looks. If the page goes beyond the limit, the new data is rendered and the depth is still shown as 3.
+- **dt_list_page_margin** : determines how overlapping the view looks. If the page goes beyond the limit, the new data is rendered and the depth is still shown as 3.
 
-- **org_stack_view_color_array** : "org_stack_view_color_array" should be one more than "org_depth_limit".
+- **dt_stack_view_color_array** : "dt_stack_view_color_array" should be one more than "dt_depth_limit".
 
 <img width="987" alt="view_attrs" src="https://user-images.githubusercontent.com/18481078/74507897-13178b00-4f41-11ea-8550-8320a6da3d49.png">
 
@@ -140,21 +140,21 @@ class TestAdapter: DynamicTreeAdapter<Node>(
     override fun onCreate(savedInstanceState: Bundle?) {
         ...
         val treeList: List<Node> = ...
-        org_view.treeData = treeList
-        org_view.orgAdapterGenerator = { MyOrgGroupAdapter() }
-        org_view.render()
+        dt_view.treeData = treeList
+        dt_view.orgAdapterGenerator = { MyOrgGroupAdapter() }
+        dt_view.render()
     }
 
     override fun onBackPressed() {
-        if (org_view.canGoBack()) {
-            org_view.goBack()
+        if (dt_view.canGoBack()) {
+            dt_view.goBack()
         } else {
             super.onBackPressed()
         }
     }
 ```
 
-** You can clone this project and run the demo immediately. **
+**You can clone this project and run the demo immediately.**
 
 ## License
 
