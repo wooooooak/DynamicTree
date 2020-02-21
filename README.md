@@ -55,7 +55,7 @@ The latest version is 1.0.0. Checkout [here](https://github.com/wooooooak/Dynami
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-- **dt_list_page_margin** : determines how overlapping the view looks. If the page goes beyond the limit, the new data is rendered and the depth is still shown as 3.
+- **dt_list_page_margin** : determines how overlapping the view looks. If the page goes beyond the `dt_depth_limit`, the new data is rendered but the depth shown to the user is still the depth you set.
 
 - **dt_stack_view_color_array** : "dt_stack_view_color_array" should be one more than "dt_depth_limit".
 
@@ -78,14 +78,14 @@ The latest version is 1.0.0. Checkout [here](https://github.com/wooooooak/Dynami
 
 ### 2. Prepare Tree Data
 
-We need a list of tree. **And Each node must implement UniqueKey for earch algorithm.**
+We need a list of tree. **And Each node must implement UniqueKey for search algorithm.**
 
 ```kotlin
 // For Eaxample
 
 data class Node(
-    override val uniqueKey: String,
-    override val child: List<Node>?,
+    override val uniqueKey: String,  // you should override
+    override val child: List<Node>?,  // you should override
     val personInfo: Person? // or anything more
 ) : UniqueKey
 
